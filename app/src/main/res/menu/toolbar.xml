@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toggle_layout"
+        android:icon="@drawable/ic_grid_on_white_24dp"
+        android:title="@string/toggle_layout"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/download_all"
+        android:icon="@drawable/ic_cloud_download_white_24dp"
+        android:title="@string/download_all"
+        app:showAsAction="always" />
+</menu>

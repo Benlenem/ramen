@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ramenstagram</string>
+    <string name="download_all">Download all pictures</string>
+    <string name="toggle_layout">Toggle layout</string>
+</resources>

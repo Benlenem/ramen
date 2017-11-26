@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="fr.benjo.ramenstagram.viewmodels.FullscreenImageViewModel" />
+
+        <import type="fr.benjo.ramenstagram.utils.BindingAdapters" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@{ BindingAdapters.convertColorToDrawable(vm.placeHolderColor) }"
+            android:scaleType="centerCrop"
+            android:transitionName="node"
+            bind:imageUrl="@{ vm.pictureUrl }" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#30000000"
+            android:maxLines="7"
+            android:padding="4dp"
+            android:text="@{ vm.caption }"
+            android:textColor="#ffff" />
+
+    </RelativeLayout>
+
+
+</layout>
